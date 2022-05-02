@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Typography marginLeft={1} variant="h2">
-        Medical Knowledge Graph
+        Medical Knowledge Graph Test
       </Typography>
       <Grid style={{ flex: 1 }} container spacing={2}>
         <Grid item xs={3}>

@@ -27,3 +27,10 @@ jobs:
         with:
           push: true
           tags: sobott/medknowledgegraph-frontend:latest
+      - 
+        name: Update image tag on the Azure Web App
+        uses: azure/webapps-container-deploy@v1
+        with:
+          app-name: 'medknowledgegraph'
+          slot-name: 'production'
+          images: 'sobott/medknowledgegraph-frontend:latest'
